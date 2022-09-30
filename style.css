@@ -584,13 +584,11 @@ position: relative;
       }
       .cart-item-price .makeInput{
         display: inline-block;
-        width: 50px;
-       
+        width: 30px;
 
       }
       .makeInput input{
         width: 100%;
-        height: 100%;
         
       }
       .Shopping-cart button{
