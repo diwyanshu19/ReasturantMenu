@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>CityFood</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+     <script defer src="index.js"></script>
+</head>
+<body>
+    <section class="site-contain">
+        <div class="back"></div>
+        <nav>
+            <div class="logo-container">
+                <div class="logo-img">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="logo-text">
+                    <h2>City</h2>
+                </div>
+            </div>
+            <div class="item-nav-container">
+                <p>Home</p>
+                <p>Menu</p>
+                <p>Service</p>
+                <p>Shop</p>
+            </div>
+            <div class="search-container-box">
+                <div class="search-logo">
+                    <span><i class="fa fa-search" aria-hidden="true"></i></span>
+                </div>
+                <div class="search-input">
+                    <input type="text" name="" id="searchbox" placeholder="Search Here">
+                </div>
+                <div class="cart-logo" id="cart-icon">
+                <span><i class="fa fa-cart-plus" aria-hidden="true"></i></span>
+                </div>
+                <div class="cart-module cart-module-disactive">
+                    <div class="logo-container logo-container1">
+                        <div class="combine">
+                        <div class="logo-img">
+                            <img src="img/logo.png" alt="">
+                        </div>
+                        <div class="logo-text">
+                            <h2>City</h2>
+                        </div>
+                    </div>
+                        <div class="cart-logo not-visible" id="cart-icon1">
+                            <span><i class="fa fa-cart-plus" aria-hidden="true"></i></span>
+                            </div>
+                    </div>
+                    <div class="order-text">
+                        <p>Your Order</p>
+                       
+                    </div>
+                    <div class="cart-item-cnt">
+                    <!-- <div class="cart-item">
+                        <div class="cart-item-img">
+                            <img src='img/food1.jpeg' alt="">
+                            <div class="cross">
+                                ❌
+                            </div>
+                        </div>
+                        <div class="cart-item-text">
+                            <p class = "cart-item-title">chicken</p>
+                            <div class="cart-item-price">
+                                <span>$</span><span id="price"39>343</span><span>X</span><span>1</span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-item-img">
+                            <img src='img/food1.jpeg' alt="">
+                            <div class="cross">
+                                ❌
+                            </div>
+                        </div>
+                        <div class="cart-item-text">
+                            <p class = "cart-item-title">chicken</p>
+                            <div class="cart-item-price">
+                                <span>$</span><span id="price"39>343</span><span>X</span><span>1</span>
+                            </div>
+                        </div>
+                        
+                    </div> -->
+                    </div>
+                    <div class="cart-cal">
+                        <div class="delivery">
+                            <p>Delivery</p>
+                            <p>$20</p>
+                        </div>
+                        <div class="Discount">
+                            <p>Discount</p>
+                            <p>-$10</p>
+                        </div>
+                    </div>
+                   <div class="total">
+                    <p>Total</p>
+                    <p id="total-Price">$0</p>
+                   </div>
+                   <div class="button-checkout  checkout-able">
+                    <button>Checkout</button>
+                </div>
+                 <div class="Shopping-cart shooping-disable">
+                    <div class="shopping-header-txt">
+                        <h1>Shopping cart</h1>
+                        <p>Homepage / clothing categories / MyShooping Cart</p>
+                    </div>
+
+                    <div class="login-detail-box">
+                        <div class="login-detail-cnt">
+                            <div class="login-detail">
+                                <div class="login-txt">
+                                    <h2>Login ✅</h2>
+                                    <p>Diwyanshu [+8448322721]</p>
+                                </div>
+                                <div class="change-butt">
+                                    <button>Change</button>
+                                </div>
+
+                            </div>
+                            <div class="shipping-detail login-detail">
+                                <div class="shipping-txt">
+                                    <h2>SHIPPING ADDRESS ✅</h2>
+                                    <p>DEVREV cloud pvt ,IIT madaras Research park, chennai-100230</p>
+                                </div>
+                                <div class="change-butt">
+                                    <button>Change</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="payment-method">
+                        <div class="payment-heading">
+                            <h1>PAYMENT METHOD</h1>
+                        </div>
+                        <div class="payment-method-list">
+                            <div class="debit-card">
+                                <div class="radio">
+                                    <input type="radio" name="payment" value="debit">
+                                </div>
+                                <div class="debit-logo">
+                                   <span><i class="fa fa-credit-card" aria-hidden="true"></i></span>
+                                   <span>Debit/ Credit Card</span>
+
+                                </div>
+                               
+                            </div>
+                            <div class="debit-card">
+                                <div class="radio">
+                                    <input type="radio" name="payment" value="net">
+                                </div>
+                                <div class="debit-logo">
+                                   <span><i class="fa fa-globe" aria-hidden="true"></i></span>
+                                   <span>Net Banking</span>
+
+                                </div>
+                               
+                            </div>
+                            <div class="debit-card">
+                                <div class="radio">
+                                    <input type="radio" name="payment" value="Google">
+                                </div>
+                                <div class="debit-logo">
+                                   <span><i class="fa fa-paypal" aria-hidden="true"></i></span>
+                                   <span>Google / Apple wallet</span>
+
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="button-checkout checkout-able1">
+                            <button>Checkout</button>
+                    </div>
+
+                 </div>
+                </div>
+                
+            </div>
+        </nav>
+        <section class="header">
+            <article class="header-left-side">
+                <div class="delivery-logo-box">
+                    <div class="logo">
+                        <p>Bike Delivery</p>
+                        <div class="delivery-logo-img">
+                            <img src="img/deliveryboy.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class = "header-main-heading">
+                    <h1>The Fastest</h1>
+                    <h1>Delivery</h1>
+                    <h1>in <span id="OrangeStyle"> Your City</span></h1>
+                </div>
+                <div class="header-paragraph">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius modi, earum enim minima labore .</p>
+                </div>
+                <div class="header-buttons-left-side">
+                    <div class="left-side-button1">
+                        <button>Order Now</button>
+                        
+                    </div>
+                    <div class="left-side-button2">
+                        <div class="arrow-logo">
+                            <span><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span>
+                        </div>
+                        <span id="orderId">Order Process</span>
+                    </div>
+                </div>
+                <div class="services">
+                    <h1>Services</h1>
+                    <div class="service-container">
+                   
+                        <div class="service-box">
+                          
+                           <span><i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+                        
+                           <p>Catering Service</p>
+                      
+                    </div>
+                    <div class="service-box">
+                           
+                          <span><i class="fa fa-credit-card" aria-hidden="true"></i></span>
+                           <p>Online Booking</p>
+                      
+                    </div>
+                    <div class="service-box">
+                       
+                          <span><i class="fa fa-truck" aria-hidden="true"></i></span>
+                           <p>Delivery Service</p>
+                       
+                    </div>
+                </div>
+                </div>
+            </article>
+            <article class="header-right-side">
+              <div class="food-box-container">
+               
+                <!-- <div class="circle2"></div> -->
+                <!-- <div class="circle3"></div>
+                <div class="circle4"></div>
+                <div class="circle5"></div> -->
+                <div class="food-box">
+                    
+                    <div class="img-food">
+                        <img src="img/burger.png" alt="">
+                    </div>
+                    <div class="circle2"></div>
+                    <section class="containing">
+                    <div class="food-box-text">
+                        <h3>Pizza</h3>
+                        <p>Homemade Pizza</p>
+                        <p><span>$</span> 5.25</p>
+                    </div>
+
+                    <div class="food-box-arrows">
+                        <div class="right-arrow">
+                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="left-arrow">
+                         <span><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                </section>
+                </div>
+                <div class="food-box">
+                    <div class="img-food">
+                        <img src="img/sushi.jpeg" alt="">
+                    </div>
+                    <div class="circle"></div>
+                    <section class="containing">
+                    <div class="food-box-text">
+                        <h3>Cake</h3>
+                        <p>cream Cake</p>
+                        <p><span>$</span> 5.25</p>
+                    </div>
+
+                    <div class="food-box-arrows">
+                        <div class="right-arrow">
+                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="left-arrow">
+                         <span><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                  </section>
+                </div>
+                <div class="food-box">
+                    <div class="img-food">
+                        <img src="img/donuts.jpeg" alt="">
+                    </div>
+                    <div class="circle3"></div>
+                    <section class="containing">
+                    <div class="food-box-text">
+                        <h3>Burger</h3>
+                        <p>Mushroom Sauce</p>
+                        <p><span>$</span> 5.25</p>
+                    </div>
+
+                    <div class="food-box-arrows">
+                        <div class="right-arrow">
+                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="left-arrow">
+                         <span><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                   </section>
+                </div>
+                <div class="food-box">
+                    <div class="img-food">
+                        <img src="img/foodbowl.png" alt="">
+                    </div>
+                    <div class="circle4"></div>
+                    <section class="containing">
+                    <div class="food-box-text">
+                        <h3>Food Dish</h3>
+                        <p>Chicken Salad</p>
+                        <p><span>$</span> 5.25</p>
+                    </div>
+
+                    <div class="food-box-arrows">
+                        <div class="right-arrow">
+                          <span><i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+                        </div>
+                        <div class="left-arrow">
+                         <span><i class="fa fa-arrow-left" aria-hidden="true"></i></span>
+                        </div>
+                    </div>
+                   </section>
+                </div>
+              </div>
+            </article>
+        </section>
+      <section class = "main-food">
+        <div class="main-food-text">
+            <h1>Specials Menu</h1>
+            <p>Traditionally Fresh Deliciously Indonesian</p>
+        </div>
+        <div class="big-circle"></div>
+        <div class="main-food-box-container">
+            <div class="arrow-slider-left disable">
+                <span>←</span>
+            </div>
+            <div class="main-food-box-cnt">
+                <div class="main-food-container" data-id="1">
+                    <div class="main-img">
+                        <img src="img/food1.jpeg" alt="">
+                    </div>
+                    <div class="main-txt">
+                        <p>Pizza</p>
+                        <div class="rating">
+                            <p>⭐️⭐️⭐️⭐️</p>
+                            <p><span>$</span> 39.9</p>
+                            <button class="menu-button" data-id="1">➕</button>
+                        </div>
+                    </div>
+                    <span id="ff">.</span>
+                </div>
+                <div class="main-food-container" data-id="2">
+                    <div class="main-img">
+                        <img src="img/food2.jpeg" alt="">
+                    </div>
+                    <div class="main-txt">
+                        <p>Chicken</p>
+                        <div class="rating">
+                            <p>⭐️⭐️⭐️⭐️</p>
+                            <p><span>$</span> 39.9</p>
+                            <button class="menu-button" data-id="2">➕</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-food-container" data-id="3">
+                    <div class="main-img">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <div class="main-txt">
+                        <p>chicken logo</p>
+                        <div class="rating">
+                            <p>⭐️⭐️⭐️⭐️</p>
+                            <p><span>$</span> 39.9</p>
+                            <button class="menu-button" data-id="3">➕</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-food-container" data-id="4">
+                    <div class="main-img">
+                        <img src="img/sushi.jpeg" alt="">
+                    </div>
+                    <div class="main-txt">
+                        <p>Sushi</p>
+                        <div class="rating">
+                            <p>⭐️⭐️⭐️⭐️</p>
+                            <p><span>$</span> 39.9</p>
+                            <button class="menu-button" data-id="4">➕</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-food-container" data-id="5">
+                    <div class="main-img">
+                        <img src="img/food3.jpeg" alt="">
+                    </div>
+                    <div class="main-txt">
+                        <p>Fish </p>
+                        <div class="rating">
+                            <p>⭐️⭐️⭐️⭐️</p>
+                            <p><span>$</span> 39.9</p>
+                            <button class="menu-button" data-id="5">➕</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-food-container" data-id="6">
+                    <div class="main-img">
+                        <img src="img/food4.webp" alt="">
+                    </div>
+                    <div class="main-txt">
+                        <p>Chicken Leg</p>
+                        <div class="rating">
+                            <p>⭐️⭐️⭐️⭐️</p>
+                            <p><span>$</span> 39.9</p>
+                            <button class="menu-button" data-id="6">➕</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-food-container"  data-id="7">
+                    <div class="main-img">
+                        <img src="img/food5.jpeg" alt="">
+                    </div>
+                    <div class="main-txt">
+                        <p>Burger</p>
+                        <div class="rating">
+                            <p>⭐️⭐️⭐️⭐️</p>
+                            <p><span>$</span> 39.9</p>
+                            <button class="menu-button"  data-id="7">➕</button>
+                        </div>
+                    </div>
+                    <span id="tt">.</span>
+                </div>
+            </div>
+            <div class="arrow-slider-right">
+                <span>→</span>
+            </div>
+        </div>
+      </section>
+
+    </section>
+</body>
+</html>
