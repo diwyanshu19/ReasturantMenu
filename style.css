@@ -545,7 +545,23 @@ position: relative;
     width: 30px; 
 }
 /* for mobile first design */
+.cart-item-price .makeInput{
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 2px 3px 10px gray;
+    cursor: pointer;
 
+  }
+  .makeInput input{
+    outline: none;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    height: 100%;
+   
+  }
 @media only screen and (max-width: 1028px)  {
     nav{
     flex-direction: column;
@@ -582,15 +598,12 @@ position: relative;
         gap: 0.7rem;
         padding-top: 2REM;
       }
-      .cart-item-price .makeInput{
-        display: inline-block;
-        width: 30px;
-
-      }
+      
       .makeInput input{
         width: 100%;
         
       }
+      
       .Shopping-cart button{
         padding: 0.5rem;
         border: none;
